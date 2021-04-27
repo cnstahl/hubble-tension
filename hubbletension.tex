@@ -74,7 +74,7 @@ A key confirmation of the Big Bang came in 1965 when Penzias and Wilson tried to
 Soon after the Big Bang the universe was very hot. Eventually it reached a state in which the dominant form of matter was protons and electrons. At this point, the matter and was coupled to the radiation and the temperature was high enough to keep the matter ionized. Thus, the universe was a plasma, and the plasma was opaque.
 In this phase the entire universe was in thermal equilibrium. Note that this fact alone is surprising, since we know that there were points in thermal equilibrium that were outside each other's cosmic horizons. This is one of the motivations for inflation. 
 
-Eventually (300\;000 years after the Big Bang), the Universe cooled down enough for atoms to form, a process called, . At this point the matter and radiation lost contact and the photons were able to free-stream. The photons from recombination are still traveling through the now-transparent Universe, and we see them as a background microwave signal coming from every direction.
+Eventually, the Universe cooled down enough for atoms to form, a process called recombination. At this point the matter and radiation lost contact and the photons were able to free-stream. The photons from recombination are still traveling through the now-transparent Universe, and we see them as a background microwave signal coming from every direction.
 
 Although this cosmic microwave background (CMB) is extremely uniform, it has some anisotropies. In the 1990s cosmologists figured out how to use these perturbations to confirm the \L CDM model and also make predictions. In particular, it is possible to use the CMB to predict the value of $H_0$. Initially, the value predicted from the CMB and the value measured by observations did not agree, but had large enough error bars that the two values were compatible. 
 
@@ -185,8 +185,8 @@ Now that we have introduced the necessary cosmological prerequisites, we can see
 
 \subsection{CMB Prediction} \label{sub:predic}
 
-As mentioned in the introduction, the CMB is very close to uniform, with perturbations a factor of $10^4$ smaller than the uniform temperature. These perturbations have been measured by WMAP, \Planck{} \note{explain}, and others in order to probe the evolution of the early universe. We will refer to the \Planck{} 2013 results~\cite{Planck2013} and the \Planck{} 2018 results~\cite{Planck2018} in this analysis.
-%
+As mentioned in the introduction, the CMB is very close to uniform, with perturbations a factor of $10^4$ smaller than the uniform temperature. These perturbations have been measured by WMAP, \Planck{} \note{explain}, and others in order to probe the evolution of the early universe. We will refer to the \Planck{} 2013 results~\cite{Planck2013} and the \Planck{} 2018 results~\cite{Planck2018} in this analysis. \outline{The main idea here is\dots}
+
 %The perturbations are decomposed into spherical harmonics, and their amplitudes $a_{\l m}$ are averaged to obtain the power spectrum~\cite{Kamionkowski1999, Samtleben2007},
 %\begin{align}
 %C_l =  \ex{a_{lm}^* a_{lm}^{\phantom{*}}}_m = \th{2l+1} \sum_{m = -l}^l |a_{lm}|^2,
@@ -205,14 +205,14 @@ Before recombination, in the opaque plasma, the sound speed is
 \begin{align}
 c_s = \th{\sqrt{3(1+\frac{3\rho_b}{\rho_\gamma})}},
 \end{align}
-where $\rho_b$ is the baryon density and $\rho_\gamma$ is the density of photons. In analogy with Eqn.~\ref{eqn:comoving} we can define the sound horizon~\cite{Planck2013}
+where $\rho_b$ is the baryon density and $\rho_\gamma$ is the density of photons. In analogy with Eqn.~\ref{eqn:comoving} we can define the sound horizon at recombination~\cite{Planck2013}
 \begin{align}
-r_s(t) = \int_0^t \frac{c_s}{a} dt' = \int_{z(t) }^\infty \frac{c_s\, dz'}{H}, \label{eqn:rs}
+r_s^*r_s(t_*) = \int_0^{t_*} \frac{c_s}{a} dt = \int_{z_*}^\infty \frac{c_s\, dz}{H}, \label{eqn:rs}
 \end{align}
+where asterisks denote the time of decoupling.
 which defines how far density waves can have traveled by  time $t$. 
 
-\note{define star}
-Since we want to make measurements of the CMB, we care about the sound horizon at recombination $r_s^*=r_s(t_*)$. Since this value depends only on baryon and photon densities, $r^*_s$ is independent of CMB measurements. From the CMB, we can instead extract the angular scale of the sound horizon at recombination, $\theta_s^*$. 
+Since $r^*_s$ depends only on baryon and photon densities, its value is independent of CMB measurements. From the CMB, we can instead extract the angular scale of the sound horizon at recombination, $\theta_s^*$. 
 %Unfortunately, there is not a simple formula for $\theta_s^*$. Instead, it is found using the positions of as many peaks in the spectrum as possible. For the \textit{Planck} mission this means seven peaks~\cite{Planck2013, Planck2018}. 
 In Euclidean geometry, an object of size $r$ at distance $d>>r$ subtends an angle $\theta = r/d$.
 Similarly, the sound horizon and its angular scale are related by
@@ -229,7 +229,7 @@ so that a value of $D_A^*$ can be used to infer $H(z)$. In particular, we can us
 
 Actually, the whole process is slightly more complicated than that. A more careful analysis shows that the above procedure most directly predicts the reduced density parameters $\omega_b = \Omega_bh^2$ and $\omega_c = \Omega_c h^2$. These predictions can then be combined with local measurements of $\Omega_b$ and $\Omega_c$ to predict the derived parameter $h$ or $H_0$. Ref.~\cite{Planck2018} has nice graphs showing how $h$ and other derived parameter co-vary with the different parameters like $\omega_b$ that are directly predicted by \textit{Planck}. 
 
-Furthermore, the \Planck{} predictions are based not only on the temperature anisotropy spectrum but also on polarization spectra. The gold standard result from \Planck{} uses temperature-temperature, temperature-E-mode, and E-mode-E-mode spectra, plus low-E and lensing data. This pipeline provides a prediction of ${H_0 = \hnaught{67.27 \pm 0.6}}$. Further addition of B-mode polarization and BAO data can further change the prediction, but only slightly.
+Furthermore, the \Planck{} predictions are based not only on the temperature anisotropy spectrum but also on polarization spectra. The gold standard result from \Planck{} combines these spectra to produce a prediction of ${H_0 = \hnaught{67.27 \pm 0.6}}$. Different combinations can change the prediction, but only slightly.
 
 \subsection{Measurement} \label{sub:measure}
 
