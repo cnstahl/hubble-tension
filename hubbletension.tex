@@ -129,7 +129,7 @@ dt = a\;d\tau = \frac{da}{Ha} = -\frac{a\,dz}{H}
 \end{align}
 to convert between the variables.
 
-If an emitter emits a light signal at time $t_e = t(\tau_e)$ and an observer observes the signal at $t_o = t(\tau_o)$, then the comoving distance between them is
+Horizons and distance scales are of paramount importance in observational cosmology. If an emitter emits a light signal at time $t_e = t(\tau_e)$ and an observer observes the signal at $t_o = t(\tau_o)$, then the comoving distance between them is
 \begin{align}
 r_{oe} = \tau_o - \tau_e = \int_{t_e}^{t_o}\frac{dt}{a(t)}. \label{eqn:comoving}
 \end{align}
@@ -225,7 +225,7 @@ The SH0ES project~\cite{Riess2020} is the current gold standard for observationa
 
 \subsection{Summary} \label{sub:sum}
 
-In order to quantify the tension between SH0ES and the \Planck{} measurement, we want to calculate to level of uncertainty the difference between the measurements vanishes~\cite{Dietrich2014}. Explicitly,\footnote{This may be basic statistics, but the author was unable to find the calculation in any of the reference papers, and thought it might be useful to include.} using the values for $h$ to avoid units and letting subscripts distinguish the \Planck{} and SH0ES data, 
+In order to quantify the tension between SH0ES and the \Planck{} measurement, we want to calculate to what level of uncertainty the difference between the measurements vanishes~\cite{Dietrich2014}. Explicitly,\footnote{This may be basic statistics, but the author was unable to find the calculation in any of the reference papers, and thought it might be useful to include.} using the values for $h$ to avoid units and letting subscripts distinguish the \Planck{} and SH0ES data, 
 \begin{align}
 \Delta &= h_1 - h_2 = .6727 - .732 = 5.93,\nn
 \sigma &= \sqrt{\sigma_1^2 + \sigma_2^2} = \sqrt{.0060^2 + .013^2} = .0143,\nn
@@ -235,7 +235,7 @@ which is to say that the two measurements disagree at $4.2\sigma$. Other transfo
 
 There are other methods of measuring, such as those relying on gravitational waves. Currently, they have high enough uncertainty that they agree with the CMB prediction and the SH0ES observation. If they can significantly decrease uncertainty they may come out of agreement with one or the other. New methods
 will not relieve tension if they agree with observations, but can say whether or not SH0ES data has  systematics.
-Fig.~\ref{fig:whisker} shows the value and uncertainty of $H_0$ using many different methods. 
+Fig.~\ref{fig:whisker} shows the value and uncertainty of $H_0$ using many different methods. Note that many pairs of error bars do not overlap.
 
 \begin{figure}
 \centering
@@ -289,9 +289,11 @@ Finally, there are theories of modified gravity, inflation, modified behavior at
 
 \section{Conclusion} \label{sec:concl}
 
-\outline{lensing, polarization, BAO}
+The goal of this paper has been to introduce the Hubble tension, while splitting the difference between cosmology reviews that do not explain how to measure $H_0$ and Hubble tension reviews that do not introduce the relevant cosmology. To that goal, we have tried to not shy away from some of the complicated aspects. That being said, the story here has still been highly simplified. For example, the actual way that $H_0$ is inferred from CMB data involves heavy numerical modeling and statistical work. 
 
-\outline{Testing ground for new physics}
+In addition there are many confounding factors, from lensing of the CMB to foreground sources to instrumental noise. All of these are discussed in detail in the many \Planck{} data releases.
+
+Furthermore, there are other cosmological sources of data such as Baryon Acoustic Oscillations (BAO) that can provide alternative methods of measuring $H_0$. These methods can be combined with those mentioned in this paper to paint a picture of the Universe for which we do not have a single dominant consistent model. Observational cosmology will certainly be a useful testbed of fundamental physics for decades to come.
 
 \bibliographystyle{unsrt}
 \bibliography{hubbletension}
