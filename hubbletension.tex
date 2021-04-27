@@ -185,7 +185,9 @@ Now that we have introduced the necessary cosmological prerequisites, we can see
 
 \subsection{CMB Prediction} \label{sub:predic}
 
-As mentioned in the introduction, the CMB is very close to uniform, with perturbations a factor of $10^4$ smaller than the uniform temperature. These perturbations have been measured by WMAP, \Planck{} \note{explain}, and others in order to probe the evolution of the early universe. We will refer to the \Planck{} 2013 results~\cite{Planck2013} and the \Planck{} 2018 results~\cite{Planck2018} in this analysis. \outline{The main idea here is\dots}
+As mentioned in the introduction, the CMB is very close to uniform, with perturbations a factor of $10^4$ smaller than the uniform temperature. These perturbations have been measured by the European Space Agency's \Planck{} satellite, along with other telescopes,  to probe the evolution of the early universe. We will refer to the \Planck{} 2013 results~\cite{Planck2013} and the \Planck{} 2018 results~\cite{Planck2018} in this analysis. 
+
+The main idea here is that before the recombination time $t_*$ there were some waves in the primordial plasma that created perturbations with scale $r_s^*$. Instead of measuring the linear size of these perturbations, \Planck{} measures an angular scale $\theta_s^*$. We can then use the relationship between these quantities to probe $H(t)$.
 
 %The perturbations are decomposed into spherical harmonics, and their amplitudes $a_{\l m}$ are averaged to obtain the power spectrum~\cite{Kamionkowski1999, Samtleben2007},
 %\begin{align}
@@ -207,10 +209,9 @@ c_s = \th{\sqrt{3(1+\frac{3\rho_b}{\rho_\gamma})}},
 \end{align}
 where $\rho_b$ is the baryon density and $\rho_\gamma$ is the density of photons. In analogy with Eqn.~\ref{eqn:comoving} we can define the sound horizon at recombination~\cite{Planck2013}
 \begin{align}
-r_s^*r_s(t_*) = \int_0^{t_*} \frac{c_s}{a} dt = \int_{z_*}^\infty \frac{c_s\, dz}{H}, \label{eqn:rs}
+r_s^* =r_s(t_*) = \int_0^{t_*} \frac{c_s}{a} dt = \int_{z_*}^\infty \frac{c_s\, dz}{H}, \label{eqn:rs}
 \end{align}
-where asterisks denote the time of decoupling.
-which defines how far density waves can have traveled by  time $t$. 
+which defines how far density waves can have traveled by  decoupling. 
 
 Since $r^*_s$ depends only on baryon and photon densities, its value is independent of CMB measurements. From the CMB, we can instead extract the angular scale of the sound horizon at recombination, $\theta_s^*$. 
 %Unfortunately, there is not a simple formula for $\theta_s^*$. Instead, it is found using the positions of as many peaks in the spectrum as possible. For the \textit{Planck} mission this means seven peaks~\cite{Planck2013, Planck2018}. 
@@ -219,7 +220,7 @@ Similarly, the sound horizon and its angular scale are related by
 \begin{align}
 \theta_s^* = \frac{r_s^*}{D_A^*},
 \end{align}
-where $D_A$ is the angular diameter distance.
+where $D_A^*$ is the angular diameter distance.
 %\footnote{Although all sources use the comoving angular diameter distance for this calculation, there is considerable disagreement over what to name the variable. Ref.~\cite{Samtleben2007} uses $d_A$ while Refs.~\cite{Planck2013} and~\cite{DiValentino2021} use $D_A$. Both Ref.~\cite{Planck2018} and Wikipedia~\cite{Wikipedia} use $D_A$ to refer to the proper angular diameter distance, which is equal to the scale factor times the comoving distance.} 
 We can once again appeal to Eqn~\ref{eqn:comoving} to calculate the angular diameter distance as~\cite{Samtleben2007, DiValentino2021}
 \begin{align}
@@ -251,11 +252,10 @@ In order to quantify the tension between SH0ES and the \Planck{} measurement, we
 \sigma &= \sqrt{\sigma_1^2 + \sigma_2^2} = \sqrt{.0060^2 + .013^2} = .0143,\nn
 \frac{|\Delta|}{\sigma} &= 4.15,
 \end{align}
-which is to say that the two measurements disagree at $4.2\sigma$. Other transformations of the data from either the CMB or local measurements can result in slightly different tensions, but they generally lie in the $4\sigma$ to $6\sigma$ range~\cite{DiValentino2021}.
-
-There are other methods of measuring, such as those relying on gravitational waves. Currently, they have high enough uncertainty that they agree with the CMB prediction and the SH0ES observation. If they can significantly decrease uncertainty they may come out of agreement with one or the other. New methods
-will not relieve tension if they agree with observations, but can say whether or not SH0ES data has  systematics.
-Fig.~\ref{fig:whisker} shows the value and uncertainty of $H_0$ using many different methods. Note that many pairs of error bars do not overlap.
+which is to say that the two measurements disagree at $4.2\sigma$. Other transformations of the data from either the CMB or local measurements can result in slightly different tensions, but they generally lie in the $4\sigma$ to $6\sigma$ range~\cite{DiValentino2021}. Other ways of measuring $H_0$ are shown in 
+%There are other methods of measuring, such as those relying on gravitational waves. Currently, they have high enough uncertainty that they agree with the CMB prediction and the SH0ES observation. If they can significantly decrease uncertainty they may come out of agreement with one or the other. New methods
+%will not relieve tension if they agree with observations, but can say whether or not SH0ES data has  systematics.
+Fig.~\ref{fig:whisker}. Note that many pairs of error bars do not overlap.
 
 \begin{figure}
 \centering
