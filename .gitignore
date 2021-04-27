@@ -1,0 +1,16 @@
+
+*~
+\#*
+.DS_Store
+*.blg
+*.aux
+*.log
+*.synctex.gz
+*.cpt
+*.bbl
+*.out
+*.xml
+*.toc
+*.pyc
+python/__pycache__/
+.ipynb_checkpoints/
