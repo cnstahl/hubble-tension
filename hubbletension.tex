@@ -266,46 +266,57 @@ Fig.~\ref{fig:whisker}. Note that many pairs of error bars do not overlap.
 
 \section{Possible resolutions} \label{sec:resol}
 
-The simplest possible resolution to the Hubble tension would be that we are still not measuring velocity far enough out in the universe, so that our local value of $H_0$ is not the correct value for our entire timeslice. This possibility is highly unlikely. It would require that our local Universe is about 20 times more underdense than statistical fluctuations suggest is likely~\cite{DiValentino2021}. There are many more proposed ways to resolve the Hubble tension. In this section we will review a few methods that invoke modified dark energy, followed by a quick rundown of alternative methods.
+The simplest possible resolution to the Hubble tension would be that we are still not measuring velocity far enough out in the universe, so that our local (distance ladder) value of $H_0$ is not the correct value for our entire timeslice. This possibility is highly unlikely. It would require that our local Universe is about 20 times more underdense than statistical fluctuations suggest is likely~\cite{DiValentino2021}. There are many more proposed ways to resolve the Hubble tension. 
+%In this section we will review a few methods that invoke modified dark energy, followed by a quick rundown of alternative methods.
 
-\subsection{Modified dark energy} \label{sub:dark}
+Recall that the ingredients of the \L CDM model are General Relativity with the FLRW metric, some form of dark energy \L, cold dark matter, the Standard Model of matter we can see, and a history of the Universe. In some sense, the most phenomenological element of the \L CDM model is dark energy. If we claim that $\rho_\Lambda$ is equal to the vacuum energy of the effective field theory of the Standard Model, it is off by a stunning 120 orders of magnitude~\cite{Trodden2004}. Futhermore, recall that Einstein originally did not include $\Lambda$, then did include it, then again did not. Thus, it is tempting to modify its contribution to the Friedmann equations before any other component. 
 
-In some sense, the most phenomenological element of the \L CDM model is dark energy. If we claim that $\rho_\Lambda$ is equal to the vacuum energy of the effective field theory of the Standard Model, it is off by a stunning 120 orders of magnitude~\cite{Trodden2004}. Thus, it is tempting to modify its contribution to the Friedmann equations before any other component.
-The first type of modification we will consider is Early Dark Energy (EDE, \val{4}). These models have an extra flavor of dark energy that existed at early times but does not exist now. This changes evolution in the pre-reionization plasma, decreasing $r_s$. 
+One way to modify dark energy is to allow it to have an equation of state $w_\DE\ne-1$. This possibility, called the $w$CDM model, would fall under the category of late dark energy (LDE, \val{5}) because it changes how dark energy behaves right now. A $w$CDM model can completely alleviate the Hubble tension, at the cost of introducing phantom-like dark energy, $w_\DE<-1$. From Eqn.~\ref{eqn:pevolve} we can see that such a flavor of dark energy would have an energy density that increases with time. Then the first Friedmann equation tells us that the scale factor $a$ will diverge in finite time, a situation called the Big Rip.
 
-Our first example of EDE is a scalar field $\phi$ performing sitting in an anharmonic potential, ${V(\phi) = [1-\cos(\phi/f)]^n}$. The scalar field sits still at the bottom of the potential until a critical redshift $z_c$ when it begins to oscillate. Its equation of state as a function of $a$ is
-\begin{align}
-w_\phi(a) = -1 + \frac{1+w_n}{1+ (a_c/a)^{3(1+w_n)}},
-\end{align}
-where $w_n = (n-1)/(n+1)$ and $a_c = a(z_c)$ is the scale factor at the critical redshift. Thus, at early times $phi$ behaves like a cosmological constant with $w_\phi\approx -1$ and at late times it has an effective equation of state $w_\phi=w_n$. This would correspond to matter for $n=1$ and radiation for $n=2$, while for $n=3$ it can help decrease the Hubble tension to $2\sigma$.
+Another way to resolve the tension is to have the various perfect fluids intermix. We already know this happens, for example when an electron and a positron annihilate to create photons. Additional mixing could come from early dark energy (EDE, \val{4}) that initially behaves like dark energy but transforms into something more like matter or radiation at late time. Models of this type can decrease the Hubble tension to $2-3\sigma$. 
 
-A popular fad in the world of EDE is Rock `n' Roll, which is also a model of a scalar field $\phi$. Now, the field lives in a potential
-\begin{align}
-V(\phi) = V_0\left(\frac{\phi}{M_\text{Pl}}\right)^{2n} + V_1,
-\end{align}
-where $V_0$ and $V_1$ are constants, $n$ is an index, and $M_\text{Pl} = (8\pi G)^{-1/2}$ is the Planck mass. Once this field begins to oscillate, it either oscillates for all time (rocking), or asymptotes to a rolling solution. Models from this class claim to resolve the tension to $1.9\sigma$, but more careful analysis shows they only decrease it to $3.3\sigma$.
+Alternatively, we can consider extra interactions between dark energy and dark matter or between either of the two dark fluids and ordinary matter (\val{8}). These are, in effect, extensions of the Standard Model of particle physics. A fun example of an extra interaction model is the $L_\mu-L_\tau$ model~\cite{Escudero2019}, which includes a massive $Z'$ boson that decays into neutrinos. The authors claim that this form of extension to the Standard Model, while largely unconstrained, is able to solve both the Hubble tension and the longstanding and recently-confirmed tension in measurements of the muon magnetic moment~\cite{Muon2021}.
 
-Late dark energy (LDE, \val{5}) instead changes the equation of state for the component of dark energy that we do see. A different equation of state for dark energy changes the angular diameter distance (Eqn.~\ref{eqn:distance}) by modifying the first Friedman equation (Eqns.~\ref{eqn:fri1} and~\ref{eqn:pevolve}). The simplest LDE model is the $w$CDM model, where dark energy has a constant equation of state $w_\DE\ne-1$. A $w$CDM model can completely alleviate the Hubble tension, at the cost of introducing phantom-like dark energy, $w_\DE<-1$. From Eqn.~\ref{eqn:pevolve} we can see that such a flavor of dark energy would have an energy density that increases with time. Then the first Friedmann equation tells us that the scale factor $a$ will diverge in finite time, a situation called the Big Rip.
+There are, of course, many other modifications to any of the other components listed at the beginning of this section. The interested reader is encouraged to consult Ref.~\cite{DiValentino2021}.
 
-%Many other LDE models allow the dark energy equation of state to vary with $a$. These equations of state generically depend on the current value $w_0$ (need not be $-1$) and another parameter $w_a$ that describes the evolution. For example the CPL parameterization $w_\DE(a) = w_0 + (1-a)w_a$ allows $w_\DE$ to change from $w_0+w_a$ at the beginning of the Universe to $w_0$ now. Ref.~\cite{DiValentino2021} lists many other possible parameterizations with either one or two free parameters. 
-
-EDE and LDE models all alleviate the Hubble tension in part by increasing the number of free parameters compared to the \L CDM model. Since all these models are phenomenological anyway, we should try to match the number of parameters in \L CDM. This class of models with six degrees of freedom (\val{6}) includes Phenomenologically Emergent Dark Energy (PEDE). The equation of state is
-\begin{align}
-w_\text{PEDE} = -1 -\th{3\ln 10} [1 + \tanh \log_{10}(1 + z)],
-\end{align}
-and the model can resolve the Hubble tension to within $1\sigma$.
-
-\subsection{Other possible resolutions} \label{sub:other}
-
-There are many other possible resolutions to the Hubble tension. Here we will very briefly review a handful of categories of theories from Ref.~\cite{DiValentino2021} before concluding. Recall that the ingredients of the \L CDM model are General Relativity with the FLRW metric, some form of dark energy \L, cold dark matter, the Standard Model of matter we can see, and a history of the Universe. Since we already focused on theories that modify dark energy, the remaining theories will change some other ingredient.
-
-The first class contains theories with extra relativistic degrees of freedom (\val{7}), in the form of a higher effective number of neutrinos, $N_\eff$. This shifts the peaks in the CMB by increasing $\rho_r$ and $\Omega_r$. Alternatively, we can consider extra interactions between dark energy and dark matter or between either of the two dark fluids and ordinary matter (\val{8}). These allow the different forms of energy density and pressure to interconvert, modifying Eqn.~\ref{eqn:pevolve}. 
-
-A fun example of an extra interaction model is the $L_\mu-L_\tau$ model~\cite{Escudero2019}, which includes a massive $Z'$ boson that decays into neutrinos. The authors claim that this form of extension to the Standard Model, while largely unconstrained, is able to solve both the Hubble tension and the longstanding and recently-confirmed tension in measurements of the muon magnetic moment~\cite{Muon2021}.
-
-The interaction models are taken to the extreme in so-called unified dark fluid models (\val{9}). In these theories, there is a single dark fluid, with a time-dependent equation of state, that behaves like dark matter in the early Universe and dark energy in the late Universe. 
-
-Finally, there are theories of modified gravity, inflation, modified behavior at recombination, phase transitions in dark energy, and other possibilities (\val{10-14}). At the time of the publication of Ref.~\cite{DiValentino2021} many of these models had not been analyzed using the most recent \textit{Planck} 2018 data, so reanalysis might be useful. For all of these models, the quantitative reduction in tension can be found in Fef.~\cite{DiValentino2021}.
+%\subsection{Modified dark energy} \label{sub:dark}
+%
+%In some sense, the most phenomenological element of the \L CDM model is dark energy. If we claim that $\rho_\Lambda$ is equal to the vacuum energy of the effective field theory of the Standard Model, it is off by a stunning 120 orders of magnitude~\cite{Trodden2004}. Thus, it is tempting to modify its contribution to the Friedmann equations before any other component.
+%The first type of modification we will consider is Early Dark Energy (EDE, \val{4}). These models have an extra flavor of dark energy that existed at early times but does not exist now. This changes evolution in the pre-reionization plasma, decreasing $r_s$. 
+%
+%Our first example of EDE is a scalar field $\phi$ performing sitting in an anharmonic potential, ${V(\phi) = [1-\cos(\phi/f)]^n}$. The scalar field sits still at the bottom of the potential until a critical redshift $z_c$ when it begins to oscillate. Its equation of state as a function of $a$ is
+%\begin{align}
+%w_\phi(a) = -1 + \frac{1+w_n}{1+ (a_c/a)^{3(1+w_n)}},
+%\end{align}
+%where $w_n = (n-1)/(n+1)$ and $a_c = a(z_c)$ is the scale factor at the critical redshift. Thus, at early times $phi$ behaves like a cosmological constant with $w_\phi\approx -1$ and at late times it has an effective equation of state $w_\phi=w_n$. This would correspond to matter for $n=1$ and radiation for $n=2$, while for $n=3$ it can help decrease the Hubble tension to $2\sigma$.
+%
+%A popular fad in the world of EDE is Rock `n' Roll, which is also a model of a scalar field $\phi$. Now, the field lives in a potential
+%\begin{align}
+%V(\phi) = V_0\left(\frac{\phi}{M_\text{Pl}}\right)^{2n} + V_1,
+%\end{align}
+%where $V_0$ and $V_1$ are constants, $n$ is an index, and $M_\text{Pl} = (8\pi G)^{-1/2}$ is the Planck mass. Once this field begins to oscillate, it either oscillates for all time (rocking), or asymptotes to a rolling solution. Models from this class claim to resolve the tension to $1.9\sigma$, but more careful analysis shows they only decrease it to $3.3\sigma$.
+%
+%Late dark energy (LDE, \val{5}) instead changes the equation of state for the component of dark energy that we do see. A different equation of state for dark energy changes the angular diameter distance (Eqn.~\ref{eqn:distance}) by modifying the first Friedman equation (Eqns.~\ref{eqn:fri1} and~\ref{eqn:pevolve}). The simplest LDE model is the $w$CDM model, where dark energy has a constant equation of state $w_\DE\ne-1$. A $w$CDM model can completely alleviate the Hubble tension, at the cost of introducing phantom-like dark energy, $w_\DE<-1$. From Eqn.~\ref{eqn:pevolve} we can see that such a flavor of dark energy would have an energy density that increases with time. Then the first Friedmann equation tells us that the scale factor $a$ will diverge in finite time, a situation called the Big Rip.
+%
+%%Many other LDE models allow the dark energy equation of state to vary with $a$. These equations of state generically depend on the current value $w_0$ (need not be $-1$) and another parameter $w_a$ that describes the evolution. For example the CPL parameterization $w_\DE(a) = w_0 + (1-a)w_a$ allows $w_\DE$ to change from $w_0+w_a$ at the beginning of the Universe to $w_0$ now. Ref.~\cite{DiValentino2021} lists many other possible parameterizations with either one or two free parameters. 
+%
+%EDE and LDE models all alleviate the Hubble tension in part by increasing the number of free parameters compared to the \L CDM model. Since all these models are phenomenological anyway, we should try to match the number of parameters in \L CDM. This class of models with six degrees of freedom (\val{6}) includes Phenomenologically Emergent Dark Energy (PEDE). The equation of state is
+%\begin{align}
+%w_\text{PEDE} = -1 -\th{3\ln 10} [1 + \tanh \log_{10}(1 + z)],
+%\end{align}
+%and the model can resolve the Hubble tension to within $1\sigma$.
+%
+%\subsection{Other possible resolutions} \label{sub:other}
+%
+%%There are many other possible resolutions to the Hubble tension. Here we will very briefly review a handful of categories of theories from Ref.~\cite{DiValentino2021} before concluding. Recall that the ingredients of the \L CDM model are General Relativity with the FLRW metric, some form of dark energy \L, cold dark matter, the Standard Model of matter we can see, and a history of the Universe. Since we already focused on theories that modify dark energy, the remaining theories will change some other ingredient.
+%
+%The first class contains theories with extra relativistic degrees of freedom (\val{7}), in the form of a higher effective number of neutrinos, $N_\eff$. This shifts the peaks in the CMB by increasing $\rho_r$ and $\Omega_r$. Alternatively, we can consider extra interactions between dark energy and dark matter or between either of the two dark fluids and ordinary matter (\val{8}). These allow the different forms of energy density and pressure to interconvert, modifying Eqn.~\ref{eqn:pevolve}. 
+%
+%A fun example of an extra interaction model is the $L_\mu-L_\tau$ model~\cite{Escudero2019}, which includes a massive $Z'$ boson that decays into neutrinos. The authors claim that this form of extension to the Standard Model, while largely unconstrained, is able to solve both the Hubble tension and the longstanding and recently-confirmed tension in measurements of the muon magnetic moment~\cite{Muon2021}.
+%
+%The interaction models are taken to the extreme in so-called unified dark fluid models (\val{9}). In these theories, there is a single dark fluid, with a time-dependent equation of state, that behaves like dark matter in the early Universe and dark energy in the late Universe. 
+%
+%Finally, there are theories of modified gravity, inflation, modified behavior at recombination, phase transitions in dark energy, and other possibilities (\val{10-14}). At the time of the publication of Ref.~\cite{DiValentino2021} many of these models had not been analyzed using the most recent \textit{Planck} 2018 data, so reanalysis might be useful. For all of these models, the quantitative reduction in tension can be found in Fef.~\cite{DiValentino2021}.
 
 \section{Conclusion} \label{sec:concl}
 
