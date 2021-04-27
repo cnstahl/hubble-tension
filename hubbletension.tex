@@ -48,9 +48,9 @@
 \normalsize
 The Hubble constant $H_0$ measures the rate at which distant objects are receding away from us, as a function of their distance. In effect, it measures how fast our Universe is expanding. Although $H_0$ can be measured in our local region, it can also be inferred using the Cosmic Microwave Background (CMB) and the current standard model of cosmology, the Lambda-Cold Dark Matter (\L CDM) model. Together, the measurement and the inference can provide a check of the validity of the model. Recently, errors bars on both methods of arriving at $H_0$ have grown small enough to put them in tension. Here we review the tension and some attempts at relieving it.
 \end{abstract}
-\end{singlespace}
 
 \tableofcontents
+\end{singlespace}
 
 \section{Introduction and History} \label{sec:int}
 
@@ -95,7 +95,32 @@ ds^2 = -dt^2 + a^2(t)\left[dr^2 + r^2 (d\theta^2 + \sin^2 \theta d\phi^2)\right]
 \end{align}
 where $a(t)$ is called the scale factor. If the scale factor is constant, then the FLRW metric just describes Minkowski space. However, the ability for $a(t)$ to change with time allows the Universe to grow and shrink. In a universe with a Big Bang, the scale factor is $a=0$ at $t=0$.
 
-\outline{outline}
+From the scale factor we can  define the Hubble parameter
+$H = \dot{a}/a$,
+where $\dot{a} = da/dt$. This value is constant in space but not in time. The current value, $H_0$, also called the Hubble constant, is the value of $H(t)$ at our time slice. This is the value that Hubble measured with his distance vs. velocity graphs. The Hubble constant is often reported in the literature using the standard but strange units ${H_0= \hnaught{100\emph{h}\,}}$. 
+
+In addition to the kinematic variables we need some dynamic variables. Usually, we assume the universe contains a collection of perfect fluids labeled by $i$, each defined by an energy $\rho_i$, a pressure $p_i$, and an equation of state $p_i = w_i\rho_i$ (no sum). The variable $w_i$ is called the equation of state. As $a(t)$ changes, these fluids become more or less dense.
+
+To understand how the universe expands and contracts in response to the fluids, we can use the Einstein equation of general relativity to arrive at the Friedmann equations. The first Friedmann equation is 
+\begin{align}
+H^2 = \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3} \sum_i \rho_i  + \frac{\Lambda}{3}, \label{eqn:fri1}
+\end{align}
+which constrains the expansion of the universe given its matter content. The famous cosmological constant $\Lambda$ is just a constant of integration. It can be absorbed as a source of the equations if we let $\rho_\Lambda=\frac{\Lambda}{8\pi G}$. Under these conventions, the energy content of the universe is matter $\rho_m$ (including baryonic matter $\rho_b$ and cold dark matter $\rho_c$), radiation $\rho_r$, and dark energy $\rho_\Lambda$.
+
+The second Friedmann equation is the evolution equation,
+\begin{align}
+\dot{H} + \frac{3}{2}H^2 = \frac{\ddot{a}}{a} + \frac{1}{2} \left(\frac{\dot{a}}{a}\right)^2 = -4\pi G\sum_i p_i  + \frac{\Lambda}{2}, \label{eqn:fri2}
+\end{align}
+where we can again absorb $\Lambda$ by letting $p_\Lambda = \frac{-\Lambda}{8\pi G}$. For the remainder of this paper we will absorb $\Lambda$ as a source in both equations. 
+In that case, the second Friedmann equation tells us $\sum_i\rho_i = \frac{3H^2}{8\pi G}$. We refer to this value as the critical density $\rho_c$ and often report energy densities as $\Omega_i = \rho_i/\rho_c$~\cite{Planck2013}.
+
+If we combine the Friedmann equation we can see that each fluid evolves as 
+\begin{align}
+\rho_i(t) \propto a(t)^{-3(1+w_i)}, \label{eqn:pevolve}
+\end{align}
+which reproduces some reasonable intuition. Matter dilutes as $a^{-3}$ because it is in an expanding volume, radiation dilutes as $a^{-4}$ because it cools in addition to being in an expanding volume, and the cosmological constant does not dilute (remains constant).
+
+\subsection{Distances and Horizons}
 
 %The Robertson-Walker (or Friedmann-Lemaître-Robertson-Walker or FLRW) metric is the most general spacetime metric consistent with homogeneity and isotropy. It is given by
 %%\begin{align}
@@ -119,15 +144,15 @@ where $a(t)$ is called the scale factor. If the scale factor is constant, then t
 %Our Universe is very close to flat, so we will set $k=0$ for the rest of this paper.
 %In these equations $t$ is called the cosmic time, which is the time measured by a comoving observer. The function $a(t)$ is called the scale factor. Moving backward in time we might find a value $t_\text{min}$ such that $a(t_\text{min})=0$. This is the Big Bang. It is convenient to define $t_\text{min} = 0$.
 
-From the scale factor we can define the redshift $z$. If light is emitted with wavelength $\lambda$ when the scale factor is $a$, then if it is observed when the scale factor is $a_0$ it will have wavelength $\lambda_0 = \lambda\, a_0/a$. If we place the observer at our timeslice so that $a_0=1$, then we can define the redshift
+Horizons and distance scales are of paramount importance in observational cosmology. To start with, we can define the redshift. Instead of time $t$, cosmologists usually use the redshift $z$ to say when events occur. For example, recombination happened at $z \approx 1100$. If light is emitted with wavelength $\lambda$ when the scale factor is $a$, then if it is observed when the scale factor is $a_0$ it will have wavelength $\lambda_0 = \lambda\, a_0/a$. If we place the observer at our timeslice so that $a_0=1$, then we can define the redshift
 \begin{align}
 z = \th{a}-1, \label{eqn:redshift}
 \end{align}
-so that $\Delta\lambda = z\lambda$.
-
-From the scale factor we can also define the Hubble parameter
-$H = \dot{a}/a$,
-where $\dot{a} = da/dt$. This value, often called the Hubble constant, is constant in space but not in time. The current value, $H_0$, is the value of $H(t)$ at our time slice. The Hubble parameter is often reported in the literature using the standard but strange units ${H = \hnaught{100\emph{h}\,}}$.
+so that $\Delta\lambda = z\lambda$. The differentials
+\begin{align}
+dt = \frac{da}{Ha} = -\frac{a\,dz}{H}
+\end{align}
+can be used to convert between time and redshift.
 
 %We could replace the coordinate time $t$ with conformal time $\tau$ which obeys $dt/d\tau = a$,
 %so the metric becomes
@@ -141,11 +166,12 @@ where $\dot{a} = da/dt$. This value, often called the Hubble constant, is consta
 %\end{align}
 %to convert between the variables.
 
-Horizons and distance scales are of paramount importance in observational cosmology. Note that in the FLRW metric the speed of light is $1/a$. If an emitter emits a light signal at time $t_e$ and an observer observes the signal at $t_o$, then the comoving distance between them is
+Note that in the FLRW metric the speed of light is $1/a$. If an emitter emits a light signal at time $t_e$ and an observer observes the signal at $t_o$, then the distance between them is
 \begin{align}
-r_{oe} = \int_{t_e}^{t_o}\frac{dt}{a(t)}. \label{eqn:comoving}
+r_{oe} = \int_{t_e}^{t_o}\frac{dt}{a(t)} = \int_{z_o}^{z_e} \frac{dz}{H(z)}. \label{eqn:comoving}
 \end{align}
-Both the observer and the emitter will agree on this value. If we instead want the proper distance as measured by the observer, we get $d_o = a(t_o)r_{oe}$. The emitter measures a proper distance of $d_e = a(t_e)r_{oe}$. Since we define the scale factor such that $a(t_0)=1$ at the present time, comoving and proper distances agree for us. Eqn.~\ref{eqn:comoving} will be necessary for calculating horizons and comoving distances. For example, in a universe with a Big Bang at $t = 0$, signals can only have traveled a comoving distance of $\int_0^tdt'/a$ by time $t$.
+%Both the observer and the emitter will agree on this value. \note{forget proper distance?} If we instead want the proper distance as measured by the observer, we get $d_o = a(t_o)r_{oe}$. The emitter measures a proper distance of $d_e = a(t_e)r_{oe}$. Since we define the scale factor such that $a(t_0)=1$ at the present time, comoving and proper distances agree for us. Eqn.~\ref{eqn:comoving} 
+For example, in a universe with a Big Bang at $t = 0$, signals can only have traveled a distance of $\int_0^tdt'/a$ by time $t$. This equation will be necessary for calculating horizons and distances. In fact, all we need for the CMB measurement of $H_0$ is Eqn.~\ref{eqn:comoving} and an understanding of how the different fluid densities evolve in time.
 
 %For a Universe with a Big Bang at $\tau = t = 0$, we can calculate the particle horizon distance $r_{\text{ph}}(\tau) = \tau$. This measures the distance to which an observer can see. We can convert the equation to
 %\begin{align}
@@ -153,37 +179,13 @@ Both the observer and the emitter will agree on this value. If we instead want t
 %\end{align} 
 %which gives the proper horizon distance $d_H$ as a function of proper time $t$. \note{Define comoving vs proper}
 
-In addition to the kinematic variables we need some dynamical variables. Usually, we assume the universe is made a collection of perfect fluids labeled by $i$, each defined by an energy $\rho_i$, a pressure $p_i$, and an equation of state $p_i = w_i\rho_i$ (no sum). The variable $w_i$ is called the equation of state. 
-
-Having defined our metric and some useful variables, we can use the Einstein equation of general relativity to arrive at the Friedmann equations. The first Friedmann equation is 
-\begin{align}
-H^2 = \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3} \sum_i \rho_i  + \frac{\Lambda}{3}, \label{eqn:fri1}
-\end{align}
-which constrains the expansion of the universe given its matter content. The famous cosmological constant $\Lambda$ is just a constant of integration. It can be absorbed as a source of the equations if we let $\rho_\Lambda=\frac{\Lambda}{8\pi G}$. Under these conventions, the energy content of the universe is matter $\rho_m$ (including baryonic matter $\rho_b$ and cold dark matter $\rho_c$), radiation $\rho_r$, and dark energy $\rho_\Lambda$.
-
-The second Friedmann equation is the evolution equation,
-\begin{align}
-\dot{H} + \frac{3}{2}H^2 = \frac{\ddot{a}}{a} + \frac{1}{2} \left(\frac{\dot{a}}{a}\right)^2 = -4\pi G\sum_i p_i  + \frac{\Lambda}{2}, \label{eqn:fri2}
-\end{align}
-where we can again absorb $\Lambda$ by letting $p_\Lambda = \frac{-\Lambda}{8\pi G}$. For the remainder of this paper we will absorb $\Lambda$ as a source in both equations. 
-%Note that we could have also reabsorbed $k$ as a source. This has a different physical interpretation though, since the modern view is to think of $\Lambda$ as a form of energy (dark energy), while $k$ is purely geometric. 
-In that case, the second Friedmann equation tells us $\sum_i\rho_i = \frac{3H^2}{8\pi G}$. We refer to this value as the critical density $\rho_c$ and often report energy densities as $\Omega_i = \rho_i/\rho_c$~\cite{Planck2013}.
-
-If we combine the Friedmann equation we can see that each fluid evolves as 
-\begin{align}
-\rho_i(t) \propto a(t)^{-3(1+w_i)}, \label{eqn:pevolve}
-\end{align}
-which reproduces some reasonable intuition. Matter dilutes as $a^{-3}$ because it is in an expanding volume, radiation dilutes as $a^{-4}$ because it cools in addition to being in an expanding volume, and the cosmological constant does not dilute (remains constant). The evolution of the fluids and Eqn.~\ref{eqn:comoving} should be all we need to understand the Hubble tension.
-
-\subsection{Distances and Horizons}
-
 \section{Tension} \label{sec:tension}
 
 Now that we have introduced the necessary cosmological prerequisites, we can see what the tension in the Hubble constant really is. First we will see how measurements of the early universe through the CMB can ``predict" the current value $H_0$. Then, we will review some methods of directly measuring the value of $H_0$ in our local universe, using methods that are more accurate than those of Hubble.
 
 \subsection{CMB Prediction} \label{sub:predic}
 
-As mentioned in the introduction, the CMB is very close to uniform, with perturbations a factor of $10^4$ smaller than the uniform temperature. These perturbations have been measured by WMAP, \Planck{}, and others in order to probe the evolution of the early universe. We will refer to the \Planck{} 2013 results~\cite{Planck2013} and the \Planck{} 2018 results~\cite{Planck2018} in this analysis.
+As mentioned in the introduction, the CMB is very close to uniform, with perturbations a factor of $10^4$ smaller than the uniform temperature. These perturbations have been measured by WMAP, \Planck{} \note{explain}, and others in order to probe the evolution of the early universe. We will refer to the \Planck{} 2013 results~\cite{Planck2013} and the \Planck{} 2018 results~\cite{Planck2018} in this analysis.
 %
 %The perturbations are decomposed into spherical harmonics, and their amplitudes $a_{\l m}$ are averaged to obtain the power spectrum~\cite{Kamionkowski1999, Samtleben2007},
 %\begin{align}
@@ -203,7 +205,7 @@ Before recombination, in the opaque plasma, the sound speed is
 \begin{align}
 c_s = \th{\sqrt{3(1+\frac{3\rho_b}{\rho_\gamma})}},
 \end{align}
-where $\rho_b$ is the baryon density and $\rho_\gamma$ is the density of photons. In analogy with Eqn.~\ref{eqn:comoving} we can define the comoving sound horizon~\cite{Planck2013}
+where $\rho_b$ is the baryon density and $\rho_\gamma$ is the density of photons. In analogy with Eqn.~\ref{eqn:comoving} we can define the sound horizon~\cite{Planck2013}
 \begin{align}
 r_s(t) = \int_0^t \frac{c_s}{a} dt' = \int_{z(t) }^\infty \frac{c_s\, dz'}{H}, \label{eqn:rs}
 \end{align}
@@ -217,7 +219,9 @@ Similarly, the sound horizon and its angular scale are related by
 \begin{align}
 \theta_s^* = \frac{r_s^*}{D_A^*},
 \end{align}
-where $D_A$ is the (coming) angular diameter distance.\footnote{Although all sources use the comoving angular diameter distance for this calculation, there is considerable disagreement over what to name the variable. Ref.~\cite{Samtleben2007} uses $d_A$ while Refs.~\cite{Planck2013} and~\cite{DiValentino2021} use $D_A$. Both Ref.~\cite{Planck2018} and Wikipedia~\cite{Wikipedia} use $D_A$ to refer to the proper angular diameter distance, which is equal to the scale factor times the comoving distance.} We can once again appeal to Eqn~\ref{eqn:comoving} to calculate the angular diameter distance as~\cite{Samtleben2007, DiValentino2021}
+where $D_A$ is the angular diameter distance.
+%\footnote{Although all sources use the comoving angular diameter distance for this calculation, there is considerable disagreement over what to name the variable. Ref.~\cite{Samtleben2007} uses $d_A$ while Refs.~\cite{Planck2013} and~\cite{DiValentino2021} use $D_A$. Both Ref.~\cite{Planck2018} and Wikipedia~\cite{Wikipedia} use $D_A$ to refer to the proper angular diameter distance, which is equal to the scale factor times the comoving distance.} 
+We can once again appeal to Eqn~\ref{eqn:comoving} to calculate the angular diameter distance as~\cite{Samtleben2007, DiValentino2021}
 \begin{align}
 D_A^* = \int_{t_*}^{t_0}\frac{dt}{a} =  \int_0^{z_*}\frac{dz}{H(z)}, \label{eqn:distance}
 \end{align}
